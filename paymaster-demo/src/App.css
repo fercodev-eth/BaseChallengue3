@@ -1,0 +1,194 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* App container */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: #e6e6e6;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.highlight {
+  display: inline-block;
+  margin-left: 0.25rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #0052ff, #7b61ff);
+}
+
+.subtitle {
+  color: #b9c0d4;
+  font-size: 0.95rem;
+}
+
+/* Claim Reward Card */
+.claim-reward-container {
+  background: rgba(20, 24, 38, 0.7);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(123, 97, 255, 0.25);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin: 0 auto;
+  max-width: 720px;
+  text-align: left;
+}
+
+.claim-reward-container h2 {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  font-size: 1.5rem;
+}
+
+.buttons,
+.action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.wallet-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Buttons */
+.connect-button,
+.claim-button,
+.disconnect-button {
+  appearance: none;
+  border: 0;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 200ms ease, background 200ms ease;
+}
+
+.connect-button,
+.claim-button {
+  background: linear-gradient(135deg, #3b82f6, #7c3aed);
+  color: white;
+  box-shadow: 0 6px 18px rgba(123, 97, 255, 0.35);
+}
+
+.connect-button:disabled,
+.claim-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.disconnect-button {
+  background: #26304b;
+  color: #cfd8f3;
+  border: 1px solid rgba(207, 216, 243, 0.15);
+}
+
+.connect-button:hover:not(:disabled),
+.claim-button:hover:not(:disabled),
+.disconnect-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 22px rgba(123, 97, 255, 0.4);
+}
+
+.coinbase-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Messages */
+.error-message {
+  margin-top: 1rem;
+  border-radius: 10px;
+  background: rgba(220, 38, 38, 0.12);
+  border: 1px solid rgba(220, 38, 38, 0.35);
+  color: #fecaca;
+  padding: 0.75rem 1rem;
+  word-break: break-word;
+}
+
+.transaction-info {
+  margin-top: 1rem;
+  border-radius: 10px;
+  background: rgba(34, 197, 94, 0.12);
+  border: 1px solid rgba(34, 197, 94, 0.35);
+  color: #bbf7d0;
+  padding: 0.75rem 1rem;
+  word-break: break-word;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  #root {
+    padding: 1rem;
+  }
+  .buttons,
+  .action-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .connect-button,
+  .claim-button,
+  .disconnect-button {
+    width: 100%;
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

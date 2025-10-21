@@ -1,0 +1,67 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment files (keep examples)
+.env
+.env.*
+!.env.example
+!.env*.example
+
+# Vite cache
+.vite
+
+# Test coverage
+coverage
+.nyc_output
+
+# Lint/Typecheck caches
+.eslintcache
+
+# Build tools caches
+.turbo
+.cache
+
+# OS-specific
+Thumbs.db
+
+# Local tool configs/history
+.envrc
+.history
+
+# Ignore .gitignore files in subfolders but keep the root one
+**/.gitignore
+!/.gitignore
+
+# Compiler files
+cache/
+out/
+
+# Ignores development broadcast logs
+!/broadcast
+/broadcast/*/31337/
+/broadcast/**/dry-run/
+
+# Docs
+docs/
