@@ -56,7 +56,4 @@ npm run build
 - Revisa los scripts disponibles en cada subcarpeta (`package.json` o tooling equivalente).
 - Consulta la documentación de cada stack (Foundry/Hardhat/Vite/etc.) si necesitas comandos detallados.
 
-## Licencia
-
-MIT (o la que definas).
 
